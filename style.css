@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+:root {
+    --laranja-claro: #fd7e14;
+    --laranja-escuro: #fd5631;
+    --cinza: #333333;
+    --cinza-claro: #1d1d1d;
+    --cinza-escuro: #131313;
+    --text-color: #f0f0f0;
+}
+
+
+body{
+    background-color: var(--cinza-escuro);
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+
+header{
+    width: 300px;
+    height: 100vh;
+    background-color: var(--cinza-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header h1{
+    text-align: center;
+    font-size: 2.2em;
+    color: white;
+    margin-top: 75px;
+}
+
+
+
+header #border-1{
+    border: 5px solid var(--laranja-escuro);
+    border-bottom: none;
+    border-left: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 65px;
+    left: 180px;
+}
+
+header #border-2{
+    border: 5px solid var(--laranja-escuro);
+    border-top: none;
+    border-right: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+}
+
+
+
+nav{
+    margin: 0 auto;
+    margin-bottom: 190px;
+}
+
+
+nav p{
+    display: block;
+    width: 135px;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 3px solid var(--cinza);
+    margin-bottom: 17px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+nav p:hover{
+    color: #fd5631;
+}
+
+/* -------------------------- */
+
+
+
+
+.text-home{
+    color: white;
+    width: 500px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.text-home strong{
+    color: var(--laranja-escuro);
+}
+
+.text-home h1{
+    margin-bottom: 15px;
+}
+
+.text-home h2{
+    margin-bottom: 25px;
+}
+
+.text-home p{
+    line-height: 27px;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+/* -------------------------- */
+
+
+
+.text-about{
+    color: white;
+    width: 500px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.text-about h1{
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+.text-about .line-1{
+    width: 75px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--laranja-escuro);
+    margin-bottom: 7px;
+}
+
+.text-about .line-2{
+    width: 45px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--laranja-escuro);
+}
+
+.text-about h2 strong{
+    color: var(--laranja-escuro);
+}
+
+
+.text-about h2{
+    font-size: 1.9em;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+.text-about p{
+    line-height: 27px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.text-about .about-info{
+    margin: 0;
+   font-size: 1em;
+}
+
+/* -------------------------- */
+
+.text-services{
+    color: white;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.text-services h1{
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+.text-services .line-1{
+    width: 75px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--laranja-escuro);
+    margin-bottom: 7px;
+}
+
+.text-services .line-2{
+    width: 45px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--laranja-escuro);
+}
+
+
+.services-card-container{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.services-card{
+    background-color: var(--cinza-claro);
+    margin-right: 20px;
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px var(--cinza);
+}
+
+.services-card img{
+    width: 75px;
+}
+
+.services-card h2{
+    margin: 15px 0;
+}
+
+.services-card p{
+    color: var(--text-color);
+    line-height: 25px;
+}
+
+/* -------------------------- */
+
+.text-contact{
+    color: white;
+    margin-left: 25px;
+    padding: 10px;
+    height: 250px;
+}
+
+.text-contact h1{
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+.text-contact .line-1{
+    width: 75px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--laranja-escuro);
+    margin-bottom: 7px;
+}
+
+.text-contact .line-2{
+    width: 45px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--laranja-escuro);
+}
+
+.text-contact h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.text-contact h2::after{
+    content: " I'm at your services";
+    color: var(--laranja-escuro);
+    font-size: .9em;
+}
+
+.text-contact h3{
+    font-size: 1.5em;
+}
+
+.text-contact a{
+    color: var(--laranja-escuro);
+}
+
+.text-contact a:hover{
+    text-decoration: underline;
+}
